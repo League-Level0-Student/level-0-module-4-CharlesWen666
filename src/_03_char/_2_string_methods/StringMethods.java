@@ -1,22 +1,49 @@
 package _03_char._2_string_methods;
 
+import java.lang.invoke.StringConcatException;
+
+import javax.swing.JOptionPane;
 
 public class StringMethods {
 	public static void main(String[] args) {
 		
 		// 1. Create a String variable and initialize it to contain a minimum of 3 characters
-
+		String a = JOptionPane.showInputDialog("Put more than 3 letters");
 		// 2. Print the 3rd char of your String to the console.
 		//    HINT: .charAt
-
+		//System.out.println(a.charAt(3));
 		
 		// 3. Print the length of your String to the console.
 		//    HINT: .length()
-
+		
 		
 		// 4. Using a for loop, print one char at time to the console.
 		//    HINT: use .length() to determine how many loops
-
+		int b=a.length();
+		for(int i =0; i<b; i++) {
+			
+			System.out.println(a.charAt(i));
+		}
+			
+		
+		String c= JOptionPane.showInputDialog("Choose a letter");
+	String e="";
+		for(int o =0; o<b; o++) {
+			char d= a.charAt(o);
+			e=""+d;
+			if(c.equalsIgnoreCase(e)) {
+			
+				 System.out.println(o+1);
+			 
+		}
+		
+	
+	
+		}
+		
+		} 
+		
+		
 		
 		// 5. Pick a char inside your String, and use a loop to determine
 		//    what position/index in the String the char is located.
@@ -25,6 +52,6 @@ public class StringMethods {
 		//             for char 'b', then print "b is at index 1"
 		
 	}
-}
+
 
 
